@@ -1,3 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cmn-btn {
+  color: #FFF;
+  font-weight: 500;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: var(--Linear, linear-gradient(90deg, #7E90FE 0%, #9873FF 100%));
+  position: relative;
+  /* Required for positioning the pseudo-element */
+  overflow: hidden;
+  /* Ensure the overlay is contained within the button */
+}
+
+.cmn-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.1);
+  /* Adjust the color and opacity as needed */
+  transition: height 0.3s;
+  /* Add a transition for a smooth effect */
+  border-radius: 8px;
+}
+
+.cmn-btn:hover::before {
+  height: 100%;
+  /* Show the overlay on hover */
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
