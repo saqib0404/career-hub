@@ -3,7 +3,7 @@ import logo from "../../../assets/logo/CareerHub.png"
 
 function Header() {
     return (
-        <div className="navbar bg-base-100 md:px-20">
+        <div className="navbar md:px-20 bg-[#F0F0FF]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -27,7 +27,7 @@ function Header() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Apply Now</a>
+                <a className="btn cmn-btn">Apply Now</a>
             </div>
         </div>
     )
