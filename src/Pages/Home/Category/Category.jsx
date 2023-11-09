@@ -16,10 +16,10 @@ function Category() {
     // console.log(categories);
 
     return (
-        <section className='my-20'>
+        <section className='my-20 mx-4 md:mx-0'>
             <h2 className='text-center text-3xl md:text-4xl font-bold mb-4'>Job Category List</h2>
             <p className='text-center mb-5 text-sm'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-            <div className="categories grid md:grid-cols-4 mx-20 gap-5">
+            <div className="categories grid md:grid-cols-4 mx-16 md:mx-20 gap-5">
                 {
                     categories?.length > 1 &&
                     categories?.map(category => <div
